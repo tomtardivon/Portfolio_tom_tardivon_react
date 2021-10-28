@@ -1,0 +1,41 @@
+.container {
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: justify;
+    
+}
+
+.content {
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 800px;
+    min-width: 300px;
+    height: 450px;
+    width: 100%;
+}
+
+
+.porflio-content {
+    max-width: 800px;
+    min-width: 300px;
+    margin: 100px auto;
+    justify-content: center;
+}
+
+.centere {
+text-align: center;
+margin: 50px auto;
+}
+
+
+
+h2 {
+    font-size: 50px;
+}
+p{
+    text-align: justify;
+    margin: 50px auto;
+}
