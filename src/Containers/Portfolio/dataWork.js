@@ -1,29 +1,146 @@
 import { v4 as uuidv4 } from 'uuid'
+import dvidoe from '../../Assets/3d_video.mp4'
+import dvidoe1 from '../../Assets/3d_video_1.mp4'
+import kingvideo from '../../Assets/the_return_of_the_king.mp4'
+import toulonjoy from '../../Assets/video_presentation1.mp4'
+import mameteo from '../../Assets/mameteo.mp4'
+import Portfolio_vidoe from '../../Assets/Portfolio_vidoe.mp4'
+import motionlogo from '../../Assets/motionlogo.mp4'
+import daraigne from '../../Assets/3d_araigne.mp4'
+import jeux1 from '../../Assets/jeux1.mp4'
+import ticemed from '../../Assets/ticemed.mp4'
 
 const datadWork = [
     {
         id: uuidv4(),
-        title: "Valorant",
+        type: 'Design',
+        title: "Application de TREK",
         subTitle: "Le jeu de l'année",
-        img: 'https://studio.cults3d.com/4QqRV9kLYYEuw9ur_X3yjQl1sjk=/516x516/https://files.cults3d.com/uploaders/15024335/illustration-file/a86d53e4-2bd9-4a8f-9550-986686c3131a/gi0mAjIh_400x400.png'
+        img: 'https://i.imgur.com/ZP5qBJs.png',
+        img2: 'https://i.imgur.com/DPJoTvM.png',
+        img3:'https://i.imgur.com/LZZ6dXW.png',
+        img4:'https://i.imgur.com/aWT2G0E.png',
+        img5:'https://i.imgur.com/W1Bzpd0.png',
+        img6:'https://i.imgur.com/00Oxy5x.png',
+        description:'Le  but  du  projet  est  de  concevoir  graphiquement  un  site  web ainsi qu\'une application  de Trekking.Le Trek sélectionner est GR®406 Randonnée itinérante appelé La Voie Impériale, qui suit les traces de Napoléon qui est unique en France. Cette randonnée peut s’effectuer à pied ou à cheval.En  3  jours,  elle  vous  permettra  de  traverser  des    paysages encore  vierges  et  authentiques  de  la  Haute-Provence,  et  de découvrir un patrimoine remarquable au file des étapes.La Voie Impériale, reprend le cheminement de Napoléon Bonaparte  en  mars  1815.  Le  parcours  raverse  plusieurs  ville :  Barrême,    Blieux,  Castellane,  Chaudon-Norante,Digne-les-Bains, Entrages,SaintJacques,  Senez, et d’autres.',
+        video:'',
     },
     {
         id: uuidv4(),
-        title: "Chien",
+        type: 'Jeux',
+        title: "The Return of the king",
         subTitle: "Boder collie, rouge merle",
-        img: 'https://www.chiens-de-france.com/photo/chiens/2010_04/chiens-Border-Collie-d749794b-ada4-68f4-3585-dd1a132b28ed.jpg'
+        img: 'https://i.imgur.com/MccJw9i.png',
+        img2: 'https://i.imgur.com/YoRz91i.png',
+        img3:'https://i.imgur.com/UsVQc26.png' ,
+        img4:'https://i.imgur.com/7HT86KZ.png' ,
+        description:'J’ai commencé le projet, il y a 2 semaines. J’ai mis longtemps à démarer car je ne savais pas quoi faire. J’ai donc imaginer “The  RETURN  OF  THE  KING”  un  jeu  en  2D  de  type  Pixel  ART médival , inspiré des jeux Dead Cells, Yes Your Grace, Katana zero, Celeste...Le speech de départ du jeu est : Le roi du royaume est parti enquêter sur une île, car des phénomènes étranges si y passent.Le joueur incarne le Roi , et peut donc le déplacer. Il peut aussi tuer des monstres grâce à des attaques.Il possède une barre de vie, et il peut utilisé des items u’il aura ramassés.Et le butest d’arrivée à la fin du niveau',
+        video: kingvideo,
     },
     {
         id: uuidv4(),
-        title: "Chien",
+        type: 'Dev',
+        title: "Application de météo",
         subTitle: "Boder collie, rouge merle",
-        img: 'https://www.chiens-de-france.com/photo/chiens/2010_04/chiens-Border-Collie-d749794b-ada4-68f4-3585-dd1a132b28ed.jpg'
+        img: 'https://i.imgur.com/E3N6Xh6.png',
+        img2: 'https://i.imgur.com/LqiBuji.png',
+        img3:'https://i.imgur.com/Tiwn2oT.png' ,
+        description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis officiis in sed iste ipsa quae odit quidem voluptatem, non laborum expedita odio doloremque ullam voluptas blanditiis laudantium ipsam. Velit, facilis labore voluptas quas, voluptatum corrupti magni quam doloribus illum rerum doloremque praesentium error ipsa quasi id quisquam maiores enim!',
+        video:mameteo,
     },
     {
         id: uuidv4(),
-        title: "Chien",
+        type: '3D',
+        title: " Low poly Sanctuaires shintos 3d",
         subTitle: "Boder collie, rouge merle",
-        img: 'https://www.chiens-de-france.com/photo/chiens/2010_04/chiens-Border-Collie-d749794b-ada4-68f4-3585-dd1a132b28ed.jpg'
+        img: 'https://i.imgur.com/sZAjsKn.gif',
+        img2: 'https://i.imgur.com/e9rWStE.png',
+        img3:'https://i.imgur.com/6JOkw9F.png' ,
+        img4:'https://i.imgur.com/ftLTeNr.png' ,
+        img5:'https://i.imgur.com/ExBWjK3.png' ,
+        img6:'https://i.imgur.com/bC6c4vK.png' ,
+        description:'C\'est ma première réalisation 3D, et je suis partie sur le logiciel blender pour son côté communautaire et gratuit.J\'ai décidé de partir sur le thème du Japon et plus précisément sur les sanctuaires shintos. Au niveau de la 3D, j\'ai tout modélisé moi-même, quatre bâtiments, dont un grand temple qui m\'a pris beaucoup de temps, car j\'ai mis beaucoup de détail. Ensuite, j\'ai décidé de partir sur un style plus Low poly avec moins de détail, avec une porte TORII, un pont et un petit sanctuaire shinto. Et pour finir, j\'ai fait le décor avec des arbres, rochers, lanternes, feuilles d automne au sol, etc. ',
+        video:dvidoe,
+    },
+    {
+        id: uuidv4(),
+        type: 'Dev',
+        title: " Création du site Ticemed",
+        subTitle: "Boder collie, rouge merle",
+        img: 'https://i.imgur.com/yffTM5m.png',
+        img2: 'https://i.imgur.com/GLvanJk.png',
+        img3:'https://i.imgur.com/k3MWsbq.png' ,
+        img4:'https://i.imgur.com/A6uHRsn.png' ,
+        img5:'https://i.imgur.com/BrlsKoB.png' ,
+        img6:'https://i.imgur.com/qaTV7Hs.png' ,
+        description:'C\'est ma première réalisation 3D, et je suis partie sur le logiciel blender pour son côté communautaire et gratuit.J\'ai décidé de partir sur le thème du Japon et plus précisément sur les sanctuaires shintos. Au niveau de la 3D, j\'ai tout modélisé moi-même, quatre bâtiments, dont un grand temple qui m\'a pris beaucoup de temps, car j\'ai mis beaucoup de détail. Ensuite, j\'ai décidé de partir sur un style plus Low poly avec moins de détail, avec une porte TORII, un pont et un petit sanctuaire shinto. Et pour finir, j\'ai fait le décor avec des arbres, rochers, lanternes, feuilles d automne au sol, etc. ',
+        video:ticemed,
+    },
+    {
+        id: uuidv4(),
+        type: 'Jeux',
+        title: "1eme jeux",
+        subTitle: "Boder collie, rouge merle",
+        img: 'https://i.imgur.com/mHg6GlG.png',
+        img2: 'https://i.imgur.com/8VXecjT.png',
+        img3:'https://i.imgur.com/OmHng7r.png' ,
+        img4:'https://i.imgur.com/7ix0BFv.png' ,
+        img5: 'https://i.imgur.com/1MSGzC6.png',
+        description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis officiis in sed iste ipsa quae odit quidem voluptatem, non laborum expedita odio doloremque ullam voluptas blanditiis laudantium ipsam. Velit, facilis labore voluptas quas, voluptatum corrupti magni quam doloribus illum rerum doloremque praesentium error ipsa quasi id quisquam maiores enim!',
+        video:jeux1,
+    },
+    {
+        id: uuidv4(),
+        type: 'Video',
+        title: "Motion Logo",
+        subTitle: "Boder collie, rouge merle",
+        img: 'https://i.imgur.com/ymQ1rJ6.gif',
+        img2: 'https://i.imgur.com/q41xBOo.png',
+        img3:'https://i.imgur.com/AMlcIdB.png' ,
+        img4:'https://i.imgur.com/3qZGvEA.png' ,
+        img5: 'https://i.imgur.com/eB8mhB0.png',
+        description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis officiis in sed iste ipsa quae odit quidem voluptatem, non laborum expedita odio doloremque ullam voluptas blanditiis laudantium ipsam. Velit, facilis labore voluptas quas, voluptatum corrupti magni quam doloribus illum rerum doloremque praesentium error ipsa quasi id quisquam maiores enim!',
+        video:motionlogo,
+    },
+    {
+        id: uuidv4(),
+        type: '3D',
+        title: "Araignées-loup 3D",
+        subTitle: "Boder collie, rouge merle",
+        img: 'https://i.imgur.com/JWt4G5b.png',
+        img2: 'https://i.imgur.com/gLHT4kD.png',
+        img3:'https://i.imgur.com/eLBHkNJ.png',
+        img4:'https://i.imgur.com/W19uqMl.png',
+        img5: 'https://i.imgur.com/JF0MKaG.png',
+        img6:'https://i.imgur.com/iRHeE2f.jpg',
+        description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis officiis in sed iste ipsa quae odit quidem voluptatem, non laborum expedita odio doloremque ullam voluptas blanditiis laudantium ipsam. Velit, facilis labore voluptas quas, voluptatum corrupti magni quam doloribus illum rerum doloremque praesentium error ipsa quasi id quisquam maiores enim!',
+        video:daraigne,
+    },
+    {
+        id: uuidv4(),
+        type: 'Video',
+        title: "Portfolio  avec du tracking",
+        subTitle: "Boder collie, rouge merle",
+        img: 'https://i.imgur.com/k3Myzqw.png',
+        img2: 'https://i.imgur.com/4SvQsif.png',
+        img3:'https://i.imgur.com/v4bjPMC.png' ,
+        img4:'https://i.imgur.com/lpAHHH4.png' ,
+        description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis officiis in sed iste ipsa quae odit quidem voluptatem, non laborum expedita odio doloremque ullam voluptas blanditiis laudantium ipsam. Velit, facilis labore voluptas quas, voluptatum corrupti magni quam doloribus illum rerum doloremque praesentium error ipsa quasi id quisquam maiores enim!',
+        video:Portfolio_vidoe,
+    },
+    {
+        id: uuidv4(),
+        type: 'Dev',
+        title: "Toul’onJoy",
+        subTitle: "Boder collie, rouge merle",
+        img: 'https://i.imgur.com/HH0Ubh9.png',
+        img2: 'https://i.imgur.com/Fr7SNeI.png',
+        img3:'https://i.imgur.com/8ipPi3W.png' ,
+        img4:'https://i.imgur.com/EGenuw3.png' ,
+        img5:'https://i.imgur.com/Kzsgriw.png' ,
+        img6:'https://i.imgur.com/2zoHXDW.png' ,
+        description:'J’ai dû réaliser une application web pour une réalisation collective. Donc pour développer l’application Toul’onJoy, j’ai travaillé en local avec un vagrant comme environnements de développement virtuel et Homestead comme machine virtuelle. Pour l’administration de base de données, j’ai utilisé MySQL Workbench et git pour le versionning du site avec bitbucket comme forge.J’ai construit l’application sur Laravel 6 un framework web open-source écrit en PHP respectant le principe MVC (modèle-vue-contrôleur).J’ai choisi pour ses nombreux avantages comme la capacité à fournir une sécurité de haut niveau (par exemple aucun risque d’injections SQL). De plus, le framework propose une excellente performance pour les applications web et donne accès à de nombreux outils pour les développeurs. Laravel dispose aussi d’une grande communauté et de nombreuses documentations.n parallèle, j’ai utilisé Bootstrap un framework HTML , CSS et Javascript Créé par Twitter.        Pour un gain de temps essentiel, j’ai décidé de travailler sur un template. ',
+        video:toulonjoy,
     }
 ];
 

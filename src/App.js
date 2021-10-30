@@ -11,28 +11,32 @@ import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './Components/Header/Header';
 import Skills from './Components/Skills/Skills';
-import ScrollToTop from './Components/ScrollToTop/ScrollToTop' 
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
+import Footer from './Components/Footer/Footer'
 
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
   return (
     <div id='top' className={`${themeName} app`}>
-      <Router> 
+      <Router>
         <Header />
-        <Switch>
+        <main>
+          <ScrollToTop/>
+          <Switch>
 
-          <Route path="/" exact component={Home}></Route>
-          <Route path="/ecrire" exact component={AddArticle}></Route>
-          <Route path="/portfolio" exact component={Portfolio}></Route>
-          <Route path="/articles/:slug" exact component={Article}></Route>
-          <Route path="/portfolio/:slug" exact component={OnePortfolio}></Route>
+            <Route path="/" exact component={Home}></Route>
+            <Route path="/ecrire" exact component={AddArticle}></Route>
+            <Route path="/portfolio" exact component={Portfolio}></Route>
+            <Route path="/articles/:slug" exact component={Article}></Route>
+            <Route path="/portfolio/:slug" exact component={OnePortfolio}></Route>
 
-        </Switch>
-
-        <Navbar />
-        <ScrollToTop />
+          </Switch>
+          
+        </main>
+       
       </Router>
+      <Footer />
     </div>
   );
 }

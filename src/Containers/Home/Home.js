@@ -6,6 +6,10 @@ import { useEffect, useState } from 'react'
 import { getArtcile } from '../../redux/articles/articleReducer'
 import { v4 as uuidv4 } from 'uuid'
 import {Link} from 'react-router-dom'
+import Skills from '../../Components/Skills/Skills'
+import About from '../../Components/About/About'
+import Contact from '../../Components/Contact/Contact'
+import Projects from '../../Components/Projects/Projects'
 
 export default function Home() {
 
@@ -23,6 +27,12 @@ export default function Home() {
     console.log(articles)
     return (
         <>
+            <About />
+            <Projects />
+            <Skills />
+            <Contact />
+
+
             <h1 className='home-title'>Tous les articles</h1>
             <div className="container-cards">
                 {articles.map(item => {

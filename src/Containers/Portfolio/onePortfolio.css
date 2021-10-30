@@ -27,9 +27,15 @@ img {
 
 .centere {
 text-align: center;
-margin: 50px auto;
 }
 
+.margine{
+    margin: 50px auto;
+}
+
+.margine-subtitle{
+    margin: 20px auto;
+}
 
 
 h2 {

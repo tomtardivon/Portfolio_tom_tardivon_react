@@ -5,6 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
 import { projects, skills, contact } from '../../portfolio'
+import { Link } from "react-router-dom";
 import './Navbar2.css'
 
 const Navbar = () => {
@@ -19,6 +20,43 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
+
+        {skills.length ? (
+          <li className='nav__list-item'>
+            <Link to="/">
+              <a
+                onClick={toggleNavList}
+                className='link link--nav'
+              >Accueil
+              </a>
+            </Link>
+          </li>
+        ) : null}
+
+        {skills.length ? (
+          <li className='nav__list-item'>
+            <Link to="/ecrire">
+              <a
+                onClick={toggleNavList}
+                className='link link--nav'
+              >Écrire
+              </a>
+            </Link>
+          </li>
+        ) : null}
+
+        {skills.length ? (
+          <li className='nav__list-item'>
+            <Link to="/portfolio">
+              <a
+                onClick={toggleNavList}
+                className='link link--nav'
+              >Portfolio
+              </a>
+            </Link>
+          </li>
+        ) : null}
+
         {projects.length ? (
           <li className='nav__list-item'>
             <a
