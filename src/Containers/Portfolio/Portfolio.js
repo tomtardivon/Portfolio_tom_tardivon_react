@@ -142,7 +142,7 @@ export default function Portfolio() {
                 })}
             </div>
 
-             <div class="portfolio_menu" id="filters">
+            {/*  <div class="portfolio_menu" id="filters">
                 <ul>
                     <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a></li>
                     <li><a href="#porfolio_menu" data-filter=".websites">websites</a></li>
@@ -215,7 +215,7 @@ export default function Portfolio() {
                         <p>Card Title</p>
                     </div>
                 </div>
-            </div> 
+            </div>  */}
 
         </>
     )
