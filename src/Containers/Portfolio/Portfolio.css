@@ -19,17 +19,16 @@
 
  .portfolio_menu ul li a:hover {
     background: var(--clr-filter);
-    color: var(--clr-fg) !important;
+    color: var(--clr-filter-color) !important;
 }
 
 .active_prot_menu a {
     background: var(--clr-filter);
-    color: var(--clr-fg) !important;
+    color: var(--clr-filter-color) !important;
 }
 
 .portfolio_menu ul li a {
     color: var(--clr-fg);
-    background: transparent;
     display: inline-block;
     margin: 4px;
     padding: 8px 10px;

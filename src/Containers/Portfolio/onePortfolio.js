@@ -1,33 +1,45 @@
 import React from 'react'
 import { useLocation } from 'react-router'
+import { useHistory } from "react-router-dom";
 import './onePortfolio.css'
 import GoToTop from '../../Components/GoToTop/GoToTop'
+import arrow from '../../Assets/arrow.svg';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
+import ArrowBack from '@material-ui/icons/ArrowBack'
+
+
 
 export default function () {
 
     const locatione = useLocation()
+    let history = useHistory();
 
     return (
         <div className="porflio-content content">
+            {/* <button onClick={history.goBack}><img className="imge" src={arrow} alt="React Logo" /></button> */}
+            <a  onClick={history.goBack}>
+                <ArrowBack className="imge" fontSize='large' />
+            </a>
+
             <h2 className="centere">{locatione.state.title}</h2>
             <h3 className="centere margine-subtitle">{locatione.state.type}</h3>
             <div className="centere margine">
 
-            {(() => {
-                if (locatione.state.video) {
-                    return (
-                        <video
-                        width="800" height="450" autoPlay loop="true" controls muted >
-                        <source src={locatione.state.video} type='video/mp4' />
-                    </video>
-                    )
-                } else {
-                    return (
-                        <div><img src={locatione.state.img2} /></div>
-                    )
-                }
-            })()}
-  
+                {(() => {
+                    if (locatione.state.video) {
+                        return (
+                            <video
+                                width="800" height="450" autoPlay loop="true" controls muted >
+                                <source src={locatione.state.video} type='video/mp4' />
+                            </video>
+                        )
+                    } else {
+                        return (
+                            <div><img src={locatione.state.img2} /></div>
+                        )
+                    }
+                })()}
+
             </div>
             <p>{locatione.state.description}</p>
             <img src={locatione.state.img} />

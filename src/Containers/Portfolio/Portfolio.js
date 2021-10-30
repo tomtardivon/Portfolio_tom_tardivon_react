@@ -88,7 +88,7 @@ export default function Portfolio() {
                                 }
                             }}>
                                 <div key={item.id} class="card 1 portfolio_single_content">
-                                    <div class="card_image"> <img src={item.img} /> </div>
+                                    <div class="card_image"> <img src={item.imgPortfolio} /> </div>
                                     <div class="overlay card_title title-white">
                                         {/* <p>{item.title}</p> */}
                                     </div>

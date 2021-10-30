@@ -7,6 +7,7 @@
   
   .light {
     --clr-filter: #444;
+    --clr-filter-color:#fff;
     --clr-bg: #fcfcfc;
     --clr-bg-alt: #fff;
     --clr-fg: #555;
@@ -17,6 +18,7 @@
   
   .dark {
     --clr-filter: #fcfcfc;
+    --clr-filter-color:#2a2f4c ;
     --clr-bg: #23283e;
     --clr-bg-alt: #2a2f4c;
     --clr-fg: #bdbddd;
