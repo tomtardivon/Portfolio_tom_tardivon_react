@@ -21,7 +21,7 @@ const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
   return (
     <div id='top' className={`${themeName} app`}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <main>
           <ScrollToTop/>
