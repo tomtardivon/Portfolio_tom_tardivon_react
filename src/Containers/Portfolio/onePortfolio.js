@@ -17,12 +17,12 @@ export default function () {
     return (
         <div className="porflio-content content">
             {/* <button onClick={history.goBack}><img className="imge" src={arrow} alt="React Logo" /></button> */}
-            <a  onClick={history.goBack}>
+            <a onClick={history.goBack}>
                 <ArrowBack className="imge" fontSize='large' />
             </a>
 
             <h2 className="centere">{locatione.state.title}</h2>
-            <h3 className="centere margine-subtitle">{locatione.state.type}</h3>
+            <h3 className="centere margine-subtitle">{locatione.state.type} : {locatione.state.subTitle} </h3>
             <div className="centere margine">
 
                 {(() => {
@@ -42,6 +42,25 @@ export default function () {
 
             </div>
             <p>{locatione.state.description}</p>
+
+            {(() => {
+                if (locatione.state.pdf) {
+                    return (
+                        <div className="center about" style={{margin:"40px"}}>
+
+                            <a href={locatione.state.pdf} target="_blank">
+                                <span type='button' className='btn btn--outline'>
+                                    En savoir plus
+                                </span>
+                            </a>
+                        </div>
+                    )
+                } else {
+                    return (
+                        console.log('Pas de pdf')
+                    )
+                }
+            })()}
             <img src={locatione.state.img} />
             {(() => {
                 if (locatione.state.img2) {

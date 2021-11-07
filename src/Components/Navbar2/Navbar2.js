@@ -57,7 +57,7 @@ const Navbar = () => {
           </li>
         ) : null}
 
-        {projects.length ? (
+{/*         {projects.length ? (
           <li className='nav__list-item'>
             <a
               href='#projects'
@@ -79,20 +79,23 @@ const Navbar = () => {
               Skills
             </a>
           </li>
-        ) : null}
+        ) : null} */}
 
         {contact.email ? (
           <li className='nav__list-item'>
-            <a
-              href='#contact'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Contact
-            </a>
+            <Link to="/contact">
+              <a
+                onClick={toggleNavList}
+                className='link link--nav'
+              >Contact
+              </a>
+            </Link>
           </li>
         ) : null}
       </ul>
+
+
+
 
       <button
         type='button'

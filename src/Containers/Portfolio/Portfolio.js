@@ -10,6 +10,7 @@ import About from '../../Components/About/About'
 import Contact from '../../Components/Contact/Contact'
 import Projects from '../../Components/Projects/Projects'
 import Gallery from '../../Components/Gallery/Gallery'
+import GoToTop from '../../Components/GoToTop/GoToTop'
 
 export default function Portfolio() {
 
@@ -43,17 +44,18 @@ export default function Portfolio() {
 
     const [toggle, setToggle] = useState(true)
 
-    const chnageStage = () => {
-        setToggle(!toggle);
-    }
 
-    console.log(filtere)
+    const datadWorkR = datadWork
+    .map(x => ({ x, r: Math.random() }))
+    .sort((a, b) => a.r - b.r)
+    .map(a => a.x);
+
 
     return (
 
         <>
 
-            
+
 
             <h2 className="title-porfolio">Porfolio </h2>
 
@@ -69,21 +71,23 @@ export default function Portfolio() {
             </div>
 
             <div class="cards-list">
-                {datadWork.filter(type => type.type == filtere).map((item,) => {
+                {datadWorkR.filter(type => type.type == filtere).map((item,) => {
                     return (
                         <CardPortfolio key={uuidv4()}>
                             <Link to={{
                                 pathname: `portfolio/${item.title.replace(/\s+/g, '_').trim()}`,
                                 state: {
                                     title: item.title,
+                                    subTitle:item.subTitle,
                                     description: item.description,
-                                    type:item.type,
+                                    type: item.type,
                                     img: item.img,
                                     img2: item.img2,
                                     img3: item.img3,
                                     img4: item.img4,
                                     img5: item.img5,
                                     img6: item.img6,
+                                    pdf: item.pdf,
                                     video: item.video
                                 }
                             }}>
@@ -101,11 +105,11 @@ export default function Portfolio() {
 
 
             <div class="cards-list">
-                {datadWork.map((item,) => {
+                {datadWorkR.map((item,) => {
                     return (
 
                         (() => {
-                            if (filtere!=='') {
+                            if (filtere !== '') {
                                 return (
                                     <div></div>
                                 )
@@ -116,19 +120,21 @@ export default function Portfolio() {
                                             pathname: `portfolio/${item.title.replace(/\s+/g, '_').trim()}`,
                                             state: {
                                                 title: item.title,
+                                                subTitle:item.subTitle,
                                                 description: item.description,
-                                                type:item.type,
+                                                type: item.type,
                                                 img: item.img,
                                                 img2: item.img2,
                                                 img3: item.img3,
                                                 img4: item.img4,
                                                 img5: item.img5,
                                                 img6: item.img6,
+                                                pdf: item.pdf,
                                                 video: item.video
                                             }
                                         }}>
                                             <div key={item.id} class="card 1 portfolio_single_content">
-                                                <div class="card_image"> <img src={item.img} /> </div>
+                                                <div class="card_image"> <img src={item.imgPortfolio} /> </div>
                                                 <div class="overlay card_title title-white">
                                                     {/* <p>{item.title}</p> */}
                                                 </div>
@@ -216,7 +222,7 @@ export default function Portfolio() {
                     </div>
                 </div>
             </div>  */}
-
+            <GoToTop />
         </>
     )
 }

@@ -6,6 +6,7 @@ import {Provider} from 'react-redux'
 import { ThemeProvider } from './contexts/theme'
 import store from './redux/store'
 
+
 ReactDOM.render(
   <ThemeProvider >
   <Provider store={store}>

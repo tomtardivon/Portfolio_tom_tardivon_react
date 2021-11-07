@@ -10,6 +10,8 @@ import Skills from '../../Components/Skills/Skills'
 import About from '../../Components/About/About'
 import Contact from '../../Components/Contact/Contact'
 import Projects from '../../Components/Projects/Projects'
+import HomePortfolio from '../../Components/HomePortfolio/HomePortfolio'
+import FormulaireContact from '../../Components/FormulaireContact/FormulaireContact'
 
 export default function Home() {
 
@@ -28,12 +30,15 @@ export default function Home() {
     return (
         <>
             <About />
-            <Projects />
+            {/* <Projects /> */}
+            <HomePortfolio/>
             <Skills />
-            <Contact />
+            {/* <Contact /> */}
+            <FormulaireContact />
 
 
-            <h1 className='home-title'>Tous les articles</h1>
+
+{/*             <h1 className='home-title'>Tous les articles</h1>
             <div className="container-cards">
                 {articles.map(item => {
                     return (
@@ -51,7 +56,7 @@ export default function Home() {
                         
                     )
                 })}
-            </div>
+            </div> */}
         </>
     )
 }
