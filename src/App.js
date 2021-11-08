@@ -8,7 +8,7 @@ import AddArticle from './Containers/AddArticle/AddArticle';
 import Article from './Containers/Article/Article';
 import OnePortfolio from './Containers/Portfolio/onePortfolio';
 import './App.css'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route,Redirect  } from 'react-router-dom'
 import Header from './Components/Header/Header';
 import Skills from './Components/Skills/Skills';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
@@ -34,6 +34,7 @@ const App = () => {
             <Route path="/articles/:slug" exact component={Article}></Route>
             <Route path="/portfolio/:slug" exact component={OnePortfolio}></Route>
 
+            <Redirect from="*" to="/" />.
           </Switch>
           
         </main>
