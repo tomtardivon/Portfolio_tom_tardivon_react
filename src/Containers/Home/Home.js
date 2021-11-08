@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
 import { getArtcile } from '../../redux/articles/articleReducer'
 import { v4 as uuidv4 } from 'uuid'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Skills from '../../Components/Skills/Skills'
 import About from '../../Components/About/About'
 import Contact from '../../Components/Contact/Contact'
@@ -31,14 +31,14 @@ export default function Home() {
         <>
             <About />
             {/* <Projects /> */}
-            <HomePortfolio/>
+            <HomePortfolio />
             <Skills />
             {/* <Contact /> */}
             <FormulaireContact />
 
 
 
-{/*             <h1 className='home-title'>Tous les articles</h1>
+            {/*             <h1 className='home-title'>Tous les articles</h1>
             <div className="container-cards">
                 {articles.map(item => {
                     return (

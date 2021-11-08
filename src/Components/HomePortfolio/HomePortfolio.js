@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../../Containers/Portfolio/Portfolio.css'
-import Img from '../../Assets/3d.png'
 import datadWork from '../../Containers/Portfolio/dataWork'
 import CardPortfolio from '../../Components/CardPortfolio/CardPortfolio'
 import { v4 as uuidv4 } from 'uuid'
@@ -12,9 +11,6 @@ export default function HomePortfolio() {
     const size = 3
 
     const datadWork1 = datadWork[Math.floor(Math.random() * datadWork.length)];
-
-
-
     const n = 3;
     const sample = datadWork
         .map(x => ({ x, r: Math.random() }))
@@ -30,7 +26,7 @@ export default function HomePortfolio() {
 
     return (
         <>
-            <section className='section contact center' id='skills'>
+            <section className='section contact '>
                 <h2 className='section__title'>Porfolio</h2>
                 <div class="cards-list">
                     {sample.map((item,) => {
@@ -65,6 +61,7 @@ export default function HomePortfolio() {
                         )
                     })}
                 </div>
+                <div className='center about'>
                 <Link to="/portfolio">
                     <a>
                         <span type='button' className='btn btn--outline'>
@@ -72,6 +69,7 @@ export default function HomePortfolio() {
                         </span>
                     </a>
                 </Link>
+                </div>
             </section>
 
         </>

@@ -87,10 +87,10 @@ export default function FormulaireContact() {
 
   return (
     <>
-      <div class="">
+      <section className="section">
         <form className="container-form">
 
-          <h2 className='title-porfolio'>Contact</h2>
+          <h2 className='section__title'>Contact</h2>
 
           <input
             className="inp-title"
@@ -178,7 +178,7 @@ export default function FormulaireContact() {
 
         <button className="btne third">Envoyer l'artcile</button>
       </form> */}
-      </div>
+      </section>
     </>
   )
 }

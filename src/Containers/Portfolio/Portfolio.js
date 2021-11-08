@@ -1,15 +1,9 @@
 import React, { useState } from 'react'
 import './Portfolio.css'
-import Img from '../../Assets/3d.png'
 import datadWork from './dataWork'
 import CardPortfolio from '../../Components/CardPortfolio/CardPortfolio'
 import { v4 as uuidv4 } from 'uuid'
 import { Link } from 'react-router-dom'
-import Skills from '../../Components/Skills/Skills'
-import About from '../../Components/About/About'
-import Contact from '../../Components/Contact/Contact'
-import Projects from '../../Components/Projects/Projects'
-import Gallery from '../../Components/Gallery/Gallery'
 import GoToTop from '../../Components/GoToTop/GoToTop'
 
 export default function Portfolio() {

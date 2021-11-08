@@ -32,7 +32,7 @@ const Navbar = () => {
             </Link>
           </li>
         ) : null}
-
+{/* 
         {skills.length ? (
           <li className='nav__list-item'>
             <Link to="/ecrire">
@@ -43,7 +43,7 @@ const Navbar = () => {
               </a>
             </Link>
           </li>
-        ) : null}
+        ) : null} */}
 
         {skills.length ? (
           <li className='nav__list-item'>

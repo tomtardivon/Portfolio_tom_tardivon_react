@@ -7,9 +7,9 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Tom Tardivon',
-  role: 'Front End Engineer',
+  role: 'Développeur / Designer ',
   description:
-    ' Diplômé d un Baccalauréat Technologique STI2D (Sciences et technologies de l industrie et du développement durable) option SIN (Système dInformation et Numérique) avec mention, ainsi qu’un BTS SIO (Services Informatiques aux Organisations) en option SLAM (Solutions Logicielles et Applications Métiers) qui est la partie orientée dans la programmation informatique. Je continué sur une licence 3 information - communication parcours information, communication, création numérique. Pour enchainer sur un master création numérique ou je suis actuellement ',
+    'Diplômé d’un Baccalauréat Technologique STI2D (Sciences et technologies de l’industrie et du développement durable) option SIN (Système dInformation et Numérique) avec mention, ainsi qu’un BTS SIO (Services Informatiques aux Organisations) en option SLAM (Solutions Logicielles et Applications Métiers) qui est la partie orientée dans la programmation informatique. Je continué sur une licence 3 information - communication parcours information, communication, création numérique. Pour enchainer sur un master création numérique ou je suis actuellement',
   resume: 'https://example.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/4572285217447qsfggted/',
@@ -52,20 +52,24 @@ const skills = [
   'HTML',
   'CSS',
   'JavaScript',
-  'TypeScript',
+  'Blender 3D',
   'React',
-  'Redux',
-  'SASS',
-  'Material UI',
+  'After effect',
+  'Adobe XD',
+  'PHP',
+  'InDesign',
   'Git',
-  'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Laravel',
+  'Unity 3D',
+  'SQL',
+  'React Native',
+  'Bootstrap',
+  'Premiere Pro'
 ]
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'tomtardivon@hotmail.fr',
 }
 
 export { header, about, projects, skills, contact }
