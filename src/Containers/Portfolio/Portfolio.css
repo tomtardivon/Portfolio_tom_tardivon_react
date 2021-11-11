@@ -16,7 +16,6 @@
     transition: transform .2s linear,-webkit-transform .2s linear;
 }
 
-
  .portfolio_menu ul li a:hover {
     background: var(--clr-filter);
     color: var(--clr-filter-color) !important;
@@ -35,7 +34,6 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-
 
 .portfolio_content {
     margin-top: 36px;
