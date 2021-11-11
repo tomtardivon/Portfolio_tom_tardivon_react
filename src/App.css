@@ -8,13 +8,14 @@
 .light {
   --clr-form-contact: #dfdfdf;
   --clr-form-contact-text: #000; 
-  --clr-filter: #444;
+  --clr-filter: #FAA201;
   --clr-filter-color: #fff;
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  /* --clr-primary: #2978b5; */
+  --clr-primary: #FAA201;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 

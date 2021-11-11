@@ -24,8 +24,8 @@ export default function () {
                     if (locatione.state.video) {
                         return (
                             <video
-                                width="800" height="450" autoPlay loop="true" controls muted >
-                                <source src={locatione.state.video} type='video/mp4' />
+                                width="100%" height="450" autoPlay loop="true" controls muted >
+                                <source src={`../${locatione.state.video}`} type='video/mp4' />
                             </video>
                         )
                     } else {
@@ -43,7 +43,7 @@ export default function () {
                     return (
                         <div className="center about" style={{margin:"40px"}}>
 
-                            <a href={locatione.state.pdf} target="_blank">
+                            <a href={`../${locatione.state.pdf}`} target="_blank">
                                 <span type='button' className='btn btn--outline'>
                                     En savoir plus
                                 </span>

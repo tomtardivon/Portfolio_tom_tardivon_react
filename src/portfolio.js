@@ -1,6 +1,9 @@
+import cv from '../src/Assets/pdf/cv_tom_tardivon.pdf'
+
+
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
+  homepage: 'https://tom-tardivon-portfolio.netlify.app/',
   title: 'Tom Tardivon',
 }
 
@@ -9,8 +12,8 @@ const about = {
   name: 'Tom Tardivon',
   role: 'Développeur / Designer ',
   description:
-    'Diplômé d’un Baccalauréat Technologique STI2D (Sciences et technologies de l’industrie et du développement durable) option SIN (Système dInformation et Numérique) avec mention, ainsi qu’un BTS SIO (Services Informatiques aux Organisations) en option SLAM (Solutions Logicielles et Applications Métiers) qui est la partie orientée dans la programmation informatique. Je continué sur une licence 3 information - communication parcours information, communication, création numérique. Pour enchainer sur un master création numérique ou je suis actuellement',
-  resume: 'https://example.com',
+    'Diplômé d’un Baccalauréat Technologique STI2D (Sciences et technologies de l’industrie et du développement durable) option SIN (Système d’Information et Numérique) avec mention. Ainsi qu’un BTS SIO (Services Informatiques aux Organisations) en option SLAM (Solutions Logicielles et Applications Métiers) qui est la partie orientée dans la programmation. J’ai continué sur une licence 3 information - communication parcours information, communication, création numérique. Pour enchainer sur un master en création numérique parcours Design d’expérience et Design d’Interface où je suis actuellement en 2e année',
+  resume: cv,
   social: {
     linkedin: 'https://www.linkedin.com/in/4572285217447qsfggted/',
     github: 'https://github.com',

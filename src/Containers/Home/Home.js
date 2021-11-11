@@ -1,17 +1,15 @@
 import React from 'react'
 import './Home.css'
-import Card from '../../Components/Card/Card'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
 import { getArtcile } from '../../redux/articles/articleReducer'
-import { v4 as uuidv4 } from 'uuid'
-import { Link } from 'react-router-dom'
 import Skills from '../../Components/Skills/Skills'
 import About from '../../Components/About/About'
 import Contact from '../../Components/Contact/Contact'
 import Projects from '../../Components/Projects/Projects'
 import HomePortfolio from '../../Components/HomePortfolio/HomePortfolio'
 import FormulaireContact from '../../Components/FormulaireContact/FormulaireContact'
+import oldportfolio from '../../Assets/video/portfolio.mp4'
 
 export default function Home() {
 

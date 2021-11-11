@@ -30,6 +30,7 @@ const About = () => {
           <>
             {social.github && (
               <a
+                target="_blank"
                 href={social.github}
                 aria-label='github'
                 className='link link--icon'
