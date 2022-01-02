@@ -21,7 +21,6 @@ const App = () => {
         <main>
           <ScrollToTop/>
           <Switch>
-
             <Route path="/" exact component={Home}></Route>
             <Route path="/portfolio" exact component={Portfolio}></Route>
             <Route path="/contact" exact component={FormulaireContact}></Route>
